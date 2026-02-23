@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class B02PageUi extends StatefulWidget {
-  const B02PageUi({super.key});
+class B03PageUi extends StatefulWidget {
+  const B03PageUi({super.key});
 
   @override
-  State<B02PageUi> createState() => _B02PageUiState();
+  State<B03PageUi> createState() => _B03PageUiState();
 }
 
-class _B02PageUiState extends State<B02PageUi> {
+class _B03PageUiState extends State<B03PageUi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,24 +18,24 @@ class _B02PageUiState extends State<B02PageUi> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Login here',
+              'Create Account',
               style: GoogleFonts.poppins(
                 color: const Color(0xFF1F41BB),
-                fontSize: 24,
+                fontSize: 28,
                 fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 12,
             ),
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: 70, vertical: 0),
+              margin: const EdgeInsets.symmetric(horizontal: 50, vertical: 0),
               child: Text(
-                'Welcome back, you\'ve been missed!',
+                'Create an account so you can explore all the existing jobs',
                 style: GoogleFonts.poppins(
                   color: const Color.fromARGB(255, 0, 0, 0),
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w500,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -58,6 +58,9 @@ class _B02PageUiState extends State<B02PageUi> {
                 ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(
+                    color: const Color(0xFF1F41BB),
+                  ),
                 ),
               ),
             ),
@@ -82,22 +85,29 @@ class _B02PageUiState extends State<B02PageUi> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 20,
+                        SizedBox(
+              height: 10,
             ),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 33, vertical: 0),
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  'Forgot your password?',
-                  style: GoogleFonts.poppins(
-                    color: const Color(0xFF1F41BB),
-                    fontSize: 13,
-                    fontWeight: FontWeight.bold,
-                  ),
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: const Color(0xFFF1F4FF),
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.8,
+                ),
+                hintText: 'Confirm Password',
+                hintStyle: GoogleFonts.poppins(
+                  color: Colors.grey[700],
+                  fontSize: 13,
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 30,
             ),
             SizedBox(
               height: 20,
@@ -114,7 +124,7 @@ class _B02PageUiState extends State<B02PageUi> {
                 ),
               ),
               child: Text(
-                'Sign in',
+                'Sign up',
                 style: GoogleFonts.poppins(
                   color: Colors.white,
                   fontSize: 16,

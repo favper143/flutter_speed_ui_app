@@ -98,7 +98,6 @@ class _A01PageUiState extends State<A01PageUi> {
               ),
               child: Row(
                 children: [
-                  // ปุ่มฝั่งซ้าย (Sign in)
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
@@ -125,7 +124,9 @@ class _A01PageUiState extends State<A01PageUi> {
                         child: Text(
                           'Sign in',
                           style: GoogleFonts.poppins(
-                            color: isLogin ? Colors.white : const Color.fromARGB(255, 61, 49, 49),
+                            color: isLogin
+                                ? Colors.white
+                                : const Color.fromARGB(255, 61, 49, 49),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -158,7 +159,9 @@ class _A01PageUiState extends State<A01PageUi> {
                         child: Text(
                           'Register',
                           style: GoogleFonts.poppins(
-                            color: !isLogin ? Colors.white : const Color.fromARGB(255, 61, 49, 49),
+                            color: !isLogin
+                                ? Colors.white
+                                : const Color.fromARGB(255, 61, 49, 49),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
