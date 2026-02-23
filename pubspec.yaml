@@ -32,4 +32,10 @@ flutter:
   uses-material-design: true
   assets: 
     - assets/images/
+  
+  fonts:
+    - family: PrumoDeck
+      fonts:
+        - asset: assets/fonts/PrumoDeckW00Black.ttf
+          weight: 900
 

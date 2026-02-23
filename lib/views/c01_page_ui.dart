@@ -31,14 +31,12 @@ class _C01PageUiState extends State<C01PageUi> {
     return Scaffold(
       body: Stack(
         children: [
-          // เลเยอร์ที่ 1: รูปภาพพื้นหลัง
           Image.asset(
             'assets/images/img8.png',
             width: double.infinity,
             height: double.infinity,
             fit: BoxFit.cover,
           ),
-          // เลเยอร์ที่ 2: เนื้อหา
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
