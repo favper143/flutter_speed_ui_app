@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/c02_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class C01PageUi extends StatefulWidget {
@@ -9,6 +10,22 @@ class C01PageUi extends StatefulWidget {
 }
 
 class _C01PageUiState extends State<C01PageUi> {
+
+  void initState() {
+    Future.delayed(
+      Duration(seconds: 3),
+      () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>  C02PageUi(),
+          ),
+        );
+      },
+    );
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
