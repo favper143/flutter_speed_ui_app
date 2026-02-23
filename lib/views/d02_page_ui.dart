@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/d01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/d03_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/d04_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -44,7 +45,12 @@ class _D02PageUiState extends State<D02PageUi> {
                       alignment: Alignment.center,
                       child: IconButton(
                         onPressed: () {
-                          Navigator.pop(context);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => D01PageUi(),
+                            ),
+                          );
                         },
                         icon: const Icon(
                           Icons.arrow_back_ios_new,
