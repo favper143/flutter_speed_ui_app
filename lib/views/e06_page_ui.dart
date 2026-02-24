@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/views/e02_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e03_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e05_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class E06PageUi extends StatefulWidget {

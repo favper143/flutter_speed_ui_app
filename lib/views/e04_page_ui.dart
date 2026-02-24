@@ -76,12 +76,13 @@ class _E03PageUiState extends State<E03PageUi> {
                   height: 10,
                 ),
                 TextField(
+                  cursorColor: Colors.black,
                   controller: _emailController,
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
                     border: UnderlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
+                        borderSide: BorderSide(color: Color(0xFFFF9800)),
                         borderRadius: BorderRadius.circular(10)),
                     enabledBorder: OutlineInputBorder(
                       borderSide:

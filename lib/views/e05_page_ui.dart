@@ -213,7 +213,7 @@ Widget otpBox(BuildContext context, TextEditingController controller,
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: const BorderSide(color: Colors.black, width: 1.5),
+          borderSide: const BorderSide(color: Color(0xFFFF9800), width: 1.5),
         ),
       ),
       onChanged: (value) {

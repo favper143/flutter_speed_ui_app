@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/d02_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class D03PageUi extends StatefulWidget {
@@ -274,12 +275,20 @@ class _D03PageUiState extends State<D03PageUi> {
                 SizedBox(
                   width: 5,
                 ),
-                Text(
-                  'Login Now',
-                  style: GoogleFonts.poppins(
-                    color: Color(0xFF35C2C1),
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => D02PageUi()),
+                    );
+                  },
+                  child: Text(
+                    'Login Now',
+                    style: GoogleFonts.poppins(
+                      color: Color(0xFF35C2C1),
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                 ),
               ],
